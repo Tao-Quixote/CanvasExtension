@@ -52,3 +52,20 @@ The usage of 'windowToCanvas' is as follows:
  */
 context.windowToCanvas(x, y);
 ```
+
+### 4、 addDrawPolygon()
+
+This method will add a method 'drawPolygon' which can draw polygon lines, you can use this function by the following codes:
+
+```javascript
+CE.addDrawPolygon();
+```
+
+The usage of 'drawPolygon' is as follows:
+
+```javascript
+/**
+ * [centerX, centerY] is the coordinate of the polygon's 
+ */
+context.drawPolygon(centerX, centerY, radius, sides, startAngle);
+```

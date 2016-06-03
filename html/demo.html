@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>demo</title>
-    <script src="../modules/dashedLineTo.js"></script>
+    <script src="../modules/addDrawPolygon.js"></script>
     <script src="../CE.js"></script>
     <style>
         #canvas {
@@ -17,5 +17,11 @@
 
 <canvas id="canvas" width="100" height="100"></canvas>
 
+<script>
+    window.onload = function () {
+        CE.all();
+        window.context = document.getElementById('canvas').getContext('2d');
+    }
+</script>
 </body>
 </html>
