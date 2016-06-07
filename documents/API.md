@@ -65,7 +65,33 @@ The usage of 'drawPolygon' is as follows:
 
 ```javascript
 /**
- * [centerX, centerY] is the coordinate of the polygon's 
+ * [centerX, centerY] is the coordinate of the polygon's
+ * radius is the radius of the circumcircle of the polygon
+ * sides is the number of the sides of the polygon
+ * startAngle is where do you want to start to draw the first dot of the polygon
+ *
+ * return {boolean} If the polygon is draw successfully, true will be returned.
  */
 context.drawPolygon(centerX, centerY, radius, sides, startAngle);
+```
+
+###5、 addDrawCircleWithCursor()
+
+This method will add a method 'drawCircleWithCursor' which will always draw a circle with cursor, you can use this method by the following codes:
+
+```javascript
+CE.addDrawCircleWithCursor();
+```
+The usage of 'drawCircleWithCursor' is as follows:
+
+```javascript
+/**
+* radius is the radius of the circle
+* fillStyle is the same as canvas.context.fillStyle, it will be used to fill the circle.
+* strokeStyle is the same as canvas.context.strokeStyle, it will be used to stroke the circle.
+* globalCompositeOperation is the same as canvas.context.globalCompositeOperation
+*
+* return {boolean} if the method works, it will return a true .
+*/
+context.drawCircleWithCursor(radius, fillStyle, strokeStyle, globalCompositeOperation);
 ```

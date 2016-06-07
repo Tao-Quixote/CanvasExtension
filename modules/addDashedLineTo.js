@@ -4,19 +4,6 @@
  * Description: 该方法通过扩展CanvasRenderingContext2D来绘制虚线
  */
 
-/**
- * 向CanvasRenderingContext2D中添加画虚线的方法,该方法可通过context直接调用
- * context.dashedLineTo(x, y, [dashedLength, ...]),用法大致同context.lineTo(x, y)
- * x: 终止点的x坐标
- * y: 终止点的y坐标
- * dashedLength: 虚线中子虚线的长度,可选值,默认为5
- *
- * 该方法内部使用moveTo方法和lineTo方法实现,所以同样需要stroke方法显示虚线
- * 该方法参考自《HTML5 canvas核心技术》
- *
- * @param context 可选参数,如果不填写则默认选中页面中的第一个canvas愿随的context
- * @return {boolean} 扩展成功返回true,如果有同名方法则返回false
- */
 function addDashedLineTo(context) {
     var methodName = 'dashedLineTo';
 
@@ -49,6 +36,19 @@ function addDashedLineTo(context) {
     };
 
     // 向CanvasRenderingContext2D添加dashedLineTo方法并实现
+    /**
+     * 向CanvasRenderingContext2D中添加画虚线的方法,该方法可通过context直接调用
+     * context.dashedLineTo(x, y, [dashedLength, ...]),用法大致同context.lineTo(x, y)
+     * x: 终止点的x坐标
+     * y: 终止点的y坐标
+     * dashedLength: 虚线中子虚线的长度,可选值,默认为5
+     *
+     * 该方法内部使用moveTo方法和lineTo方法实现,所以同样需要stroke方法显示虚线
+     * 该方法参考自《HTML5 canvas核心技术》
+     *
+     * @param context 可选参数,如果不填写则默认选中页面中的第一个canvas愿随的context
+     * @return {boolean} 扩展成功返回true,如果有同名方法则返回false
+     */
     CanvasRenderingContext2D.prototype[ methodName ] = function (x, y, dashedLength) {
         dashedLength = dashedLength === undefined ? 5 : dashedLength;
 
