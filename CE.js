@@ -1,7 +1,7 @@
 /**!
  * Author:      Tao-Quixote
  * CreateTime:  16/5/31 18:06
- * Description: This is the EC.js file,
+ * Description: This is the CE.js file,
  * please honer the author and keep the head of the js file.
  * If there is any problem or error or suggestion, please concat by web.taox@gmail.com
  */

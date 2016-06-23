@@ -6,7 +6,7 @@ This variable contains all method, you can add a certain method to the canvas's 
 
 This variable will returned by a IIFE, it is written in the CE.js file.
 
-### 2、Project's architectrue
+### 2、Project's architecture
 
 ```architecture
 |- CanvasExtension
